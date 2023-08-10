@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/blog.css" />
+    <script
+      src="https://kit.fontawesome.com/2d2e41954d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <img
+                src="https://dumbways.id/assets/images/brandred.png"
+                alt=""
+              />
+            </li>
+            <li><a href="./index.html" class="nav-home">Home</a></li>
+            <li><a href="./blog.html">Project</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="./contact.html">Contact Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-project">
+        <form onsubmit="handleAddProject()">
+          <h1 align="center">ADD MY PROJECT</h1>
+          <div class="name">
+            <label for="input-name">Project Name</label>
+            <input
+              type="text"
+              id="input-name"
+              placeholder="Masukan Nama"
+              required
+            />
+          </div>
+
+          <div class="date">
+            <div class="date-start">
+              <label for="date-start">Start Date</label>
+              <input id="date-start" type="text" required />
+            </div>
+
+            <div class="date-end">
+              <label for="date-end">End Date</label>
+              <input id="date-end" type="text" required />
+            </div>
+          </div>
+
+          <label for="input-description">Description</label>
+          <textarea
+            name=""
+            cols="4"
+            rows="5"
+            id="input-description"
+            placeholder="Masukan Deskripsi"
+          ></textarea>
+
+          <label for="">Technologies</label>
+          <table>
+            <tr>
+              <td><input type="checkbox" name="" id="node" /></td>
+              <td><label for="node">Node Js</label></td>
+              <td><input type="checkbox" name="" id="next" /></td>
+              <td><label for="next">Next Js</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id="react" /></td>
+              <td><label for="react">React Js</label></td>
+              <td><input type="checkbox" name="" id="typescript" /></td>
+              <td><label for="typescript">TypeScript</label></td>
+              <td></td>
+            </tr>
+          </table>
+
+          <div class="input-file">
+            <label for="input-file">Upload Image</label>
+            <input type="file" name="" id="input-file" />
+          </div>
+
+          <div class="button-group">
+            <button onclick="handleAddProject()" type="button">Sumbit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="my-project">
+        <h1 align="center">MY PROJECT</h1>
+        <div class="card-project">
+          <div class="row">
+            <img src="./image/gambar-coding.jpeg" alt="" />
+            <h3>Dumbways Mobile App - 2021</h3>
+            <p>durasi : 3 bulan</p>
+            <p>
+              App that used for dumbways student, it was deployed and can
+              downloader on playstore. <br />
+              Happy download
+            </p>
+            <div class="icon">
+              <i class="fa-brands fa-android" style="color: #000000"></i>
+              <i class="fa-brands fa-java" style="color: #000000"></i>
+            </div>
+            <div class="button-group">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div class="row">
+            <img src="./image/gambar-coding.jpeg" alt="" />
+            <h3>Dumbways Mobile App - 2021</h3>
+            <p>durasi : 3 bulan</p>
+            <p>
+              App that used for dumbways student, it was deployed and can
+              downloader on playstore. <br />
+              Happy download
+            </p>
+            <div class="icon">
+              <i class="fa-brands fa-android" style="color: #000000"></i>
+              <i class="fa-brands fa-java" style="color: #000000"></i>
+            </div>
+            <div class="button-group">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div class="row">
+            <img src="./image/gambar-coding.jpeg" alt="" />
+            <h3>Dumbways Mobile App - 2021</h3>
+            <p>durasi : 3 bulan</p>
+            <p>
+              App that used for dumbways student, it was deployed and can
+              downloader on playstore. <br />
+              Happy download
+            </p>
+            <div class="icon">
+              <i class="fa-brands fa-android" style="color: #000000"></i>
+              <i class="fa-brands fa-java" style="color: #000000"></i>
+            </div>
+            <div class="button-group">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div class="row">
+            <img src="./image/gambar-coding.jpeg" alt="" />
+            <h3>Dumbways Mobile App - 2021</h3>
+            <p>durasi : 3 bulan</p>
+            <p>
+              App that used for dumbways student, it was deployed and can
+              downloader on playstore. <br />
+              Happy download
+            </p>
+            <div class="icon">
+              <i class="fa-brands fa-android" style="color: #000000"></i>
+              <i class="fa-brands fa-java" style="color: #000000"></i>
+            </div>
+            <div class="button-group">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

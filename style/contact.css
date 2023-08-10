@@ -1,0 +1,97 @@
+nav {
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul {
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul li {
+  list-style-type: none;
+  margin-left: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+nav > .nav-left > ul > li > img {
+  height: 35px;
+  width: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .nav-home {
+  color: tomato !important;
+}
+main {
+  width: 500px;
+  margin: 90px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
+  -webkit-box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
+  -moz-box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
+}
+label {
+  margin-top: 10px;
+}
+input,
+select,
+textarea,
+button {
+  margin-top: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #dbdbdb;
+}
+textarea {
+  resize: none;
+}
+input,
+select {
+  height: 25px;
+  border-radius: 5px;
+}
+button {
+  width: 120px;
+  height: 40px;
+  background-color: tomato;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: tomato;
+  border: 1px solid black;
+}
