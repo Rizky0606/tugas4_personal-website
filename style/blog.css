@@ -48,7 +48,7 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
-nav ul li .nav-home {
+nav ul li .active {
   color: tomato !important;
 }
 
@@ -132,13 +132,13 @@ input {
 }
 .my-project .card-project {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   margin: 20px;
 }
 .my-project .card-project .row {
   border-radius: 8px;
-  box-shadow: 5px 5px 10px #dbdbdb;
+  box-shadow: 0 10px 10px #dbdbdb;
   padding: 10px;
 }
 .my-project .card-project .row img {
@@ -150,6 +150,10 @@ input {
 .my-project .card-project .row h3 {
   font-size: 14px;
   margin: 10px;
+}
+.my-project .card-project .row h3 a {
+  text-decoration: none;
+  color: black;
 }
 .my-project .card-project .row,
 p {
@@ -176,4 +180,10 @@ p {
   background-color: black;
   border-radius: 8px;
   padding: 3px;
+  cursor: pointer;
+}
+
+.my-project .card-project .row .button-group button:hover {
+  background-color: white;
+  color: black;
 }

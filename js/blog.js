@@ -23,14 +23,16 @@ function handleAddProject(event) {
 
   // document.getElementById("card-project").innerHTML = "";
 
+  renderProject();
+}
+
+function renderProject() {
+  document.getElementById("card-project").innerHTML = "";
   for (let i = 0; i < data.length; i++) {
-    if (data.length < 1) {
-      document.getElementById("card-project").innerHTML += "Project Kosong";
-    } else {
-      document.getElementById("card-project").innerHTML += `
+    document.getElementById("card-project").innerHTML += `
     <div class="row">
     <img src="${data[i].image}" alt="" />
-    <h3>${data[i].name}</h3>
+    <h3><a href="../project-detail.html" >${data[i].name}</a></h3>
     <p>durasi : 3 bulan</p>
     <p>
       ${data[i].description}
@@ -45,6 +47,5 @@ function handleAddProject(event) {
     </div>
   </div>
     `;
-    }
   }
 }

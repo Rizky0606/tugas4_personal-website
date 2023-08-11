@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import "contact.css";
+@import "blog.css";
 
 body {
   margin: 0;
@@ -50,7 +52,7 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
-nav ul li .nav-home {
+nav ul li .active {
   color: tomato !important;
 }
 .header {
@@ -93,13 +95,20 @@ nav ul li .nav-home {
 .header .left .contact p {
   margin-left: 20px;
 }
-button {
+.header .left .contact button {
   border-radius: 20px;
   background-color: black;
-  color: white;
-  padding: 10px;
-  width: 90px;
+  width: 100px;
   margin: 10px 0;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header .left .contact button:hover {
+  color: black;
+  background-color: white;
 }
 .sosmed {
   font-size: 35px;
