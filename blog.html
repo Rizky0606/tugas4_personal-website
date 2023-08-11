@@ -34,7 +34,7 @@
 
     <main>
       <div class="form-project">
-        <form onsubmit="handleAddProject()">
+        <form onsubmit="handleAddProject(event)">
           <h1 align="center">ADD MY PROJECT</h1>
           <div class="name">
             <label for="input-name">Project Name</label>
@@ -90,87 +90,14 @@
           </div>
 
           <div class="button-group">
-            <button onclick="handleAddProject()" type="button">Sumbit</button>
+            <button type="submit">Sumbit</button>
           </div>
         </form>
       </div>
 
       <div class="my-project">
         <h1 align="center">MY PROJECT</h1>
-        <div class="card-project">
-          <div class="row">
-            <img src="./image/gambar-coding.jpeg" alt="" />
-            <h3>Dumbways Mobile App - 2021</h3>
-            <p>durasi : 3 bulan</p>
-            <p>
-              App that used for dumbways student, it was deployed and can
-              downloader on playstore. <br />
-              Happy download
-            </p>
-            <div class="icon">
-              <i class="fa-brands fa-android" style="color: #000000"></i>
-              <i class="fa-brands fa-java" style="color: #000000"></i>
-            </div>
-            <div class="button-group">
-              <button>edit</button>
-              <button>delete</button>
-            </div>
-          </div>
-          <div class="row">
-            <img src="./image/gambar-coding.jpeg" alt="" />
-            <h3>Dumbways Mobile App - 2021</h3>
-            <p>durasi : 3 bulan</p>
-            <p>
-              App that used for dumbways student, it was deployed and can
-              downloader on playstore. <br />
-              Happy download
-            </p>
-            <div class="icon">
-              <i class="fa-brands fa-android" style="color: #000000"></i>
-              <i class="fa-brands fa-java" style="color: #000000"></i>
-            </div>
-            <div class="button-group">
-              <button>edit</button>
-              <button>delete</button>
-            </div>
-          </div>
-          <div class="row">
-            <img src="./image/gambar-coding.jpeg" alt="" />
-            <h3>Dumbways Mobile App - 2021</h3>
-            <p>durasi : 3 bulan</p>
-            <p>
-              App that used for dumbways student, it was deployed and can
-              downloader on playstore. <br />
-              Happy download
-            </p>
-            <div class="icon">
-              <i class="fa-brands fa-android" style="color: #000000"></i>
-              <i class="fa-brands fa-java" style="color: #000000"></i>
-            </div>
-            <div class="button-group">
-              <button>edit</button>
-              <button>delete</button>
-            </div>
-          </div>
-          <div class="row">
-            <img src="./image/gambar-coding.jpeg" alt="" />
-            <h3>Dumbways Mobile App - 2021</h3>
-            <p>durasi : 3 bulan</p>
-            <p>
-              App that used for dumbways student, it was deployed and can
-              downloader on playstore. <br />
-              Happy download
-            </p>
-            <div class="icon">
-              <i class="fa-brands fa-android" style="color: #000000"></i>
-              <i class="fa-brands fa-java" style="color: #000000"></i>
-            </div>
-            <div class="button-group">
-              <button>edit</button>
-              <button>delete</button>
-            </div>
-          </div>
-        </div>
+        <div id="card-project" class="card-project"></div>
       </div>
     </main>
 

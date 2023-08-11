@@ -1,6 +1,8 @@
 let data = [];
 
-function handleAddProject() {
+function handleAddProject(event) {
+  event.preventDefault();
+
   let name = document.getElementById("input-name").value;
   let startDate = document.getElementById("date-start").value;
   let endDate = document.getElementById("date-end").value;
@@ -19,15 +21,11 @@ function handleAddProject() {
   data.push(project);
   console.log(data);
 
-  renderProject();
-}
-
-function renderProject() {
-  document.getElementById("card-project").innerHTML = "";
+  // document.getElementById("card-project").innerHTML = "";
 
   for (let i = 0; i < data.length; i++) {
     if (data.length < 1) {
-      document.getElementById("card-project").innerHTML = "Project Kosong";
+      document.getElementById("card-project").innerHTML += "Project Kosong";
     } else {
       document.getElementById("card-project").innerHTML += `
     <div class="row">
@@ -45,7 +43,7 @@ function renderProject() {
       <button>edit</button>
       <button>delete</button>
     </div>
-</div>
+  </div>
     `;
     }
   }
